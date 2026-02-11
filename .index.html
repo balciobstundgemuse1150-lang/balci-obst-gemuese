@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Balci Obst & Gemüse</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #e3f1e4 0%, #f2e3e3 100%);
+      color: #222;
+    }
+
+    :root {
+      --green: #4f9654;
+      --red: #b84343;
+      --light-green: #e3f1e4;
+      --light-red: #f2e3e3;
+    }
+
+    header {
+      background: linear-gradient(90deg, var(--green), var(--red));
+      color: white;
+      padding: 22px;
+      text-align: center;
+      border-bottom: 6px solid var(--green);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      background: linear-gradient(90deg, var(--light-green), var(--light-red));
+      padding: 14px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      border-bottom: 3px solid var(--red);
+    }
+
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: var(--green);
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: var(--red);
+    }
+
+    .hero {
+      padding: 50px 20px;
+      text-align: center;
+      background: linear-gradient(180deg, white, var(--light-green));
+      border-bottom: 4px solid var(--green);
+    }
+
+    .hero h2 {
+      font-size: 30px;
+      color: var(--green);
+    }
+
+    .hero p {
+      font-size: 16px;
+      max-width: 600px;
+      margin: 15px auto;
+    }
+
+    .button {
+      display: inline-block;
+      margin: 12px 10px;
+      padding: 12px 25px;
+      background: linear-gradient(90deg, var(--red), #d35a5a);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    }
+
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .reviews {
+      background: linear-gradient(180deg, var(--light-red), white);
+      border-top: 4px solid var(--red);
+    }
+
+    .instagram {
+      background: linear-gradient(180deg, var(--light-green), white);
+      border-top: 4px solid var(--green);
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .product-card {
+      background: linear-gradient(180deg, white, var(--light-green));
+      padding: 12px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      border-bottom: 4px solid var(--green);
+    }
+
+    .product-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .contact-box {
+      background: linear-gradient(180deg, var(--light-green), var(--light-red));
+      padding: 22px;
+      border-radius: 14px;
+      max-width: 520px;
+      margin: auto;
+      line-height: 1.9;
+      border: 3px solid var(--green);
+    }
+
+    .contact-box a {
+      color: var(--red);
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .contact-box a:hover {
+      color: var(--green);
+    }
+
+    footer {
+      background: linear-gradient(90deg, var(--green), var(--red));
+      color: white;
+      text-align: center;
+      padding: 22px;
+      margin-top: 40px;
+      border-top: 6px solid var(--red);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Balci Obst & Gemüse</h1>
+    <p>Frisch • Regional • Seit 2009</p>
+  </header>
+
+  <nav>
+    <a href="#products">Produkte</a>
+    <a href="#reviews">Bewertungen</a>
+    <a href="#instagram">Instagram</a>
+    <a href="#contact">Kontakt</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Frische Qualität direkt zu dir nach Hause</h2>
+    <p>
+      Bestelle Obst, Gemüse und Spezialitäten bequem über Wolt
+      oder besuche uns direkt im Geschäft.
+    </p>
+
+    <!-- Wolt Button (Link später einfügen) -->
+    <a class="button" style="opacity:0.7;cursor:not-allowed;">🚚 Bald auf Wolt bestellen</a>
+
+    <!-- Google Bewertung Button -->
+    <a class="button" href="https://www.google.com/maps/search/?api=1&query=Balci+Obst+%26+Gem%C3%BCse" target="_blank">⭐ Auf Google bewerten</a>
+  </section>
+
+  <section class="section reviews" id="reviews">
+    <h2>⭐ Kundenbewertungen</h2>
+    <p>Sieh dir an, was unsere Kunden sagen oder hinterlasse selbst eine Bewertung.</p>
+
+    <a class="button" href="https://www.google.com/maps/search/?api=1&query=Balci+Obst+%26+Gem%C3%BCse" target="_blank">⭐ Jetzt bewerten</a>
+
+    <!-- Hinweis: Google blockiert Einbettung -->
+    <p style="margin-top:15px;">Google erlaubt aus Sicherheitsgründen keine direkte Anzeige der Bewertungen hier. Bitte auf den Button klicken, um alle Bewertungen zu sehen.</p>
+  </section>
+
+  <section class="section instagram" id="instagram">
+    <h2>📷 Instagram</h2>
+    <p>Folge uns für neue Angebote und frische Produkte.</p>
+
+    <a class="button" href="https://www.instagram.com/balci_obst_gemuse/" target="_blank">📷 Profil öffnen</a>
+
+    <!-- Hinweis: Instagram blockiert Einbettung -->
+    <p style="margin-top:15px;">Instagram erlaubt nicht immer den direkten Zugriff im eingebetteten Fenster. Bitte auf "Profil öffnen" klicken, um unsere Beiträge zu sehen.</p>
+  </section>
+
+  <section class="section" id="products">
+    <h2>🥬 Unsere Produkte</h2>
+    <div class="products">
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce" alt="Äpfel">
+        <p>Frisches Obst</p>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1542838132-92c53300491e" alt="Gemüse">
+        <p>Knackiges Gemüse</p>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1603569283847-aa295f0d016a" alt="Gewürze">
+        <p>Internationale Spezialitäten</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>📍 Kontakt</h2>
+    <div class="contact-box">
+      📞 <a href="tel:+436765964256">+43 676 5964256</a><br>
+      📷 <a href="https://www.instagram.com/balci_obst_gemuse/" target="_blank">@balci_obst_gemuse</a><br>
+      📍 <a href="https://www.google.com/maps/search/?api=1&query=Balci+Obst+%26+Gem%C3%BCse" target="_blank">Standort auf Google Maps öffnen</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Balci Obst & Gemüse</p>
+  </footer>
+
+</body>
+</html>
